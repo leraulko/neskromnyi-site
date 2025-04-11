@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Привіт, Наталю!</title>
+</head>
+<body>
+
+    <section id="start">
+        <h1>Нескромна, це ти?</h1>
+        <div>
+          <button class="button" onclick="showContent()">Так</button>
+          <button class="button" onclick="showNo()">Ні</button>
+        </div>
+      </section>
+    
+      <section id="no" class="no-section" style="display: none">
+        <h3>Уходітє, позвіть Наталю!</h3>
+        <button class="button" onclick="location.reload()">Ладно</button>
+      </section>
+    
+      <div id="content">
+        <section>
+          <h2>З Днем народження, сонечко!</h2>
+          <p>Ти — неймовірна прекрасна людина, описати яку в мене не вистачить слів. <br>
+              Ти смілива і дуже сильна жінка, яка йде в своєму напрямку, нехай життя тільки допомагає з цим. <br>
+              Я бажаю, щоб в тебе все виходило і ставалось так, як ти задумаєш, щоб все збувалось і досягалось, а якщо буде складно - щось придумаємо ;) <br>
+            Просто знай, що поруч є люди, які люблять, цінують та приймають тебе повністю такою, яка ти є. <br>
+            Всі, хто знає тебе справжню - щасливчики. І ти ніколи не одна, не забувай.
+          </p>
+        </section>
+    
+        <section>
+            <h2>Ну як не цінувати це, не знаю...</h2>
+            <div class="photo-grid">
+                <img src="./assets/IMAGE 2025-04-11 13:43:14.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:54:40.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:43:21.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:43:24.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:43:26.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:54:43.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:43:32.jpg" alt="">
+                <img src="./assets/IMAGE 2025-04-11 13:43:34.jpg" alt="">
+            </div>
+        </section>
+    
+        <section>
+          <div class="slider" id="slider-container">
+            <div class="slide active">
+              <div class="caption">Моє життя без тебе:</div>
+              <img src="./assets/without.jpg" alt="Фото 1">
+            </div>
+            <div class="slide">
+                <div class="caption">Моє життя з тобою:</div>
+              <img src="./assets/with.jpg" alt="Фото 2">
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="arrow-button" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="arrow-button" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+        </section>
+    
+        <section class="final-section">
+            <h2>Отак сильно люблю тебе 🖕</h2>
+            <img src="./assets/IMAGE 2025-04-11 14:56:06.jpg" alt="">
+        </section>
+
+        <section>
+            <p><small>п.с. коли стану справжнім програмістом - зроблю тобі справжній сайт</small></p>
+          </section>
+      </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

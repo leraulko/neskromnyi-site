@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #4b2c2c;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #d27d7f;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #a65d63;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #d27d7f;
+    cursor: pointer;
+}
+
+.paw-print {
+    position: absolute;
+    width: 30px;
+    opacity: 0.4;
+    /* transform: rotate(${Math.random() * 360}deg); */
+    /* pointer-events: none;
+    transition: opacity 1s ease-out; */
+}
+
+@keyframes paw-track {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+#content {
+    display: none;
+    flex-direction: column;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.no-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.final-section img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
